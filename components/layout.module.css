@@ -1,0 +1,107 @@
+.containerOne {
+  background-image: url("/assets/images/bg_two.jpg");
+}
+
+.containerTwo {
+}
+
+.headWrapper {
+  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+  height: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.headerHomeImage {
+  width: 8rem;
+  height: 8rem;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+.side {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+.hide,
+.hidden {
+  display: none;
+}
+
+.navSocial {
+  position: fixed;
+  top: 50%;
+}
+
+.navSocial:before {
+  content: "";
+  width: 20px;
+  background: rgb(244, 194, 96);
+  background: linear-gradient(180deg, rgba(244, 194, 96, 1) 5%, rgba(212, 109, 23, 1) 47%, rgba(24, 21, 21, 1) 86%);
+  height: 180px;
+  position: absolute;
+  z-index: 999;
+}
+
+.navSocialIcon {
+  width: 180px;
+  position: relative;
+  left: -90px;
+  transition: all 0.5s cubic-bezier(0.85, 0.19, 0.11, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navSocialIconBg {
+  width: 150px;
+  display: flex;
+  background-color: #000;
+  clip-path: polygon(76% 0, 100% 0, 74% 49%, 100% 100%, 77% 100%, 46% 61%, 0 60%, 0 41%, 44% 41%);
+  align-items: center;
+  margin: 1em 0;
+  color: #fff;
+  width: 150px;
+  height: 30px;
+}
+
+.navSocialIconTxt {
+  position: relative;
+  top: 0;
+}
+
+.navSocialIcon:hover {
+  left: 20px;
+}
+
+.navSocialIcon img {
+  height: 30px;
+}
+
+.navSocialIcon span {
+  margin-left: 0.5em;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .heigher {
+    height: 595px;
+  }
+}

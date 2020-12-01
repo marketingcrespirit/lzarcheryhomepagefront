@@ -1,0 +1,41 @@
+.lastPage a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 250px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  margin: auto;
+  transition: all .3s linear;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.lastPage a:hover {
+  background-color: transparent;
+  color: #000;
+  
+}
+
+.lastPage a p {
+  /* padding: 0 30px; */
+  text-align: center;
+  margin: 0;
+}
+
+.lastPage a p::before {
+  position: relative;
+  right: 10px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700; 
+  content: "\f100";
+  font-size: 14px;
+}
+
+.lastPage a img {
+  height: 20px;
+  margin: 0;
+  padding: 0 30px;
+}

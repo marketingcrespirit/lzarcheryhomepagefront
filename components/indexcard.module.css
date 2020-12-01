@@ -1,0 +1,56 @@
+.videoWrapper video {
+    width: 100%
+}
+
+.videoWrapperMobile {
+    display: none;
+}
+
+
+.txtWrapper {
+    margin: auto;
+    width: 60%;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+}
+
+.txtWrapper img {
+    padding-right: 1rem
+}
+
+.txtHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.txtBody {
+    width: 65%;
+    margin: auto;
+}
+
+.txtBody p {
+    line-height: 2em;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .txtHead {
+        align-items: baseline;
+    }
+    .txtWrapper {
+        width: 90%
+    }
+    .txtBody {
+        width: 90%
+    }
+    .videoWrapper {
+        display: none;
+    }
+    .videoWrapperMobile {
+        display: block;
+        height: 595px;
+    }
+
+}

@@ -1,0 +1,13 @@
+.sideWrapper {
+  background-color: white;
+  width: 300px;
+  min-height: 898px;
+  position: fixed;
+  right: -300px;
+  transition: all linear 0.5s;
+  z-index: 999;
+}
+
+.active {
+  right: 0;
+}

@@ -1,0 +1,37 @@
+.coachCard {
+    width: 230px;
+    margin: 0 1em;
+}
+
+.coachCardImg img {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.coachCardTxt {
+    text-align: center;
+    margin-top: .5em
+}
+
+
+
+.coachCardTxt p {
+    margin-bottom: .5em
+
+}
+
+.coachCardMain p {
+    margin-bottom: .5rem;
+    color: gray
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .coachCardTxt h2 {
+        margin-bottom: .1em;
+        margin-top: 0em;
+    }
+    .coachCardTxt p {
+        margin-bottom: 2em;
+    }
+}

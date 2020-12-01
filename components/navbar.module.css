@@ -1,0 +1,269 @@
+.nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navOpen {
+  display: none;
+}
+
+.dropdownMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.dropdownMenu li {
+  list-style: none;
+  text-decoration: none;
+  animation: fadeIn ease 1s;
+  z-index: 1;
+}
+
+.dropdownMenu li a {
+  text-decoration: none;
+  color: #515050;
+}
+.dropdownMenu li li a {
+  text-decoration: none;
+  color: #515050;
+}
+
+.active:before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.5s;
+  position: relative;
+  top: 40px;
+}
+
+.sub .active:before {
+  display: none;
+}
+
+.dropdownMenu li a:hover:before {
+  width: 72px;
+}
+
+.dropdownMenu li li a:after {
+  content: "";
+}
+
+.dropdownMenu li li {
+  background-color: #fff;
+  min-width: 150px;
+  padding: 0.3em 0.7em;
+}
+
+/*--- Sublist Styles ---*/
+.dropdownMenu ul {
+  position: absolute;
+  display: none;
+}
+
+/*--- Sublevel UL's display and position on hover ---*/
+.dropdownMenu li:hover ul {
+  display: block;
+}
+
+.dropdownMenu li:hover ul ul {
+  display: none;
+}
+
+.dropdownMenu li li:hover ul {
+  margin-left: 200px; /*This must be width of menu box*/
+  margin-top: -35px;
+  display: block;
+}
+
+.dropdownMenu:hover:after {
+  top: 0;
+}
+
+.dropdown-submenu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.hasChild span:after {
+  content: "▼";
+  padding-left: 5px;
+  font-size: 0.5em;
+}
+
+.content {
+  height: 200vh;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  width: 8%;
+  justify-content: space-between;
+}
+
+.toolbar button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.toolbar i {
+  color: #000;
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .dropdownMenu {
+    display: block;
+    background-color: black;
+    /* display: none; */
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    transition: all 0.5s ease-in-out;
+    left: 100%;
+  }
+
+  .navOpen {
+    border: none;
+    display: block;
+    height: 30px;
+    position: relative;
+    width: 30px;
+    background-color: #fff;
+    margin-right: 10%;
+  }
+
+  .navOpen .inner,
+  .navOpen .inner::before,
+  .navOpen .inner::after {
+    background-color: #000;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 14px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .navOpen .inner {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .navOpen .inner::before {
+    margin-top: -6px;
+    position: absolute;
+  }
+
+  .navOpen .inner::after {
+    margin-top: 6px;
+    position: absolute;
+  }
+
+  .navOpen.navClose .inner {
+    background-color: transparent;
+    left: 54%;
+  }
+
+  .navOpen.navClose .inner::before,
+  .navOpen.navClose .inner::after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    width: 17px;
+  }
+
+  .navOpen.navClose .inner::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .active:before {
+    display: none;
+  }
+
+  .dropdownMenu ul {
+    position: static;
+    transition: all 0.5s;
+  }
+
+  .dropdownMenu li {
+    padding: 0.5em 0;
+    text-align: center;
+  }
+
+  .dropdownMenu li a:after {
+    content: "▼";
+    padding-left: 5px;
+    font-size: 0.5em;
+    color: #000
+  }
+
+  .dropdownMenu li a {
+    color: #fff;
+    font-size: 18px;
+  }
+  .dropdownMenu li li a {
+    color: #fff;
+    z-index: 100;
+  }
+  .hasChild:after {
+    color: #fff;
+  }
+
+  .hasChild ul li {
+    background-color: #515050;
+    width: 100%;
+  }
+  .logo {
+    margin-left: 10%;
+  }
+  .mobileMenu {
+    margin-right: 10%;
+    display: block;
+  }
+
+  .mobileMenu button {
+    background-color: #fff;
+    border: none;
+  }
+  .right {
+    left: 0;
+  }
+  .hasChild span {
+    color: #fff;
+  }
+
+  .toolbar {
+    display: none;
+  }
+}

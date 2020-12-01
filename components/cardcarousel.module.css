@@ -1,0 +1,235 @@
+/* .slideShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 400px;
+  width: 40%;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.slideShow .previous,
+.slideShow .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 70px;
+  flex: 0 0 70px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 3px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: serif;
+  cursor: pointer;
+}
+
+.slideShow .slider {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  max-width: 428px;
+}
+
+.slide {
+  opacity: 0;
+  padding: 16px 12px;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide.show {
+  opacity: 1;
+}
+
+.slide h1 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.slide h4 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .slideShow {
+    width: 100%;
+  }
+  .slide {
+    padding: 0
+  }
+} */
+
+
+
+
+
+
+
+.carouselWrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carouselContainer {
+  width: 1000px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carouselArea {
+  width: 800px;
+  height: auto;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carouselArea > .carouselPosts {
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.carouselPostBox {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carouselPostBox > .cover {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s 0s;
+  transition: 0.5s 0s;
+  background-position: center,center;
+  background-size: cover;
+}
+
+.carouselPostBox > .cover:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.controlLeft, .controlRight {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s 0s;
+  transition: 0.5s 0s;
+  border: solid 1px white;
+  border-radius: 50%;
+  color: #000;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.controlLeft:hover, .controlRight:hover {
+  color: #1c1c1c;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.controlLeft {
+  left: 10%;
+}
+
+.controlRight {
+  right: 10%;
+}
+
+.contentBox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+}
+
+.cardBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardBox .imageStyle {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s 0s;
+  transition: 0.5s 0s;
+  background-position: center,center;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.cardBox .fontBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% - 100px - 5px);
+}
+
+.cardBox .titleStyle {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bolder;
+  white-space: pre-line;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=carousel.css.map */
+
+

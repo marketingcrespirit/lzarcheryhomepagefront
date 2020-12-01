@@ -1,0 +1,12 @@
+.list {
+    list-style: none;
+}
+
+.list p {
+    padding-bottom: .5rem
+}
+
+.list :nth-child(2) {
+    padding-left: 1rem
+}
+

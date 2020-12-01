@@ -1,0 +1,47 @@
+.coachOpening {
+    text-align: center;
+    background-color: #fff;
+    padding: 3em;
+    margin: auto;
+}
+
+.coachOpeningHead {
+    margin-bottom: 2rem;
+}
+
+.coachOpeningBody {
+    /* margin-bottom: 2rem; */
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.coachOpeningHead h1 {
+    margin-bottom: .2em;
+}
+
+.coachOpeningBody p {
+    margin-bottom: .1rem
+}
+
+.coachOpeningBody h4 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 1em
+}
+
+.coachOpeningBodyPara {
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 1100px) {
+    .coachOpening {
+        padding: 1em;
+        width: 90%;
+    } 
+    .coachOpeningBody {
+        padding: 0 ;
+        text-align: left;
+        width: 100%;
+    }
+}
