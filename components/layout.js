@@ -52,9 +52,11 @@ export default function Layout({ titled, children, locationPath, onMatchedRoutes
   return (
     <>
       <Head>
-        <meta property="og:image" content="https://lzarchery.com/assets/images/og.png" />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="keywords" content="運動,健身,射箭,射箭場,弓箭" />
+        <meta property="og:url" content="https://lzarchery.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:image" content="https://lzarchery.com/assets/images/og.jpg" />
+        <meta property="keywords" content="運動,健身,射箭,射箭場,弓箭" />
         <link rel="icon" type="image/png" href="/static/favicon.ico" sizes="16x16" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet"></link>
         <script src="https://kit.fontawesome.com/fb04d5eb8e.js" crossOrigin="anonymous"></script>
