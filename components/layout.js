@@ -52,7 +52,8 @@ export default function Layout({ titled, children, locationPath, onMatchedRoutes
   return (
     <>
       <Head>
-      <meta property="og:image" content="https://lzarchery.com/assets/images/pic_4.jpg" />        
+        <meta property="og:image" content="/static/og.png" />
+        <meta property="og:image" content="縮圖圖片連結" />
         <meta name="og:title" content={siteTitle} />
         <meta name="keywords" content="運動,健身,射箭,射箭場,弓箭" />
         <link rel="icon" type="image/png" href="/static/favicon.ico" sizes="16x16" />
