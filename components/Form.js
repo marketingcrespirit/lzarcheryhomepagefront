@@ -14,7 +14,7 @@ axios.defaults.headers.post["Content-Type"] = "application/json";
 
 import styles from "./form.module.css";
 
-const URL = "https://lzarhcery-landing.herokuapp.com/";
+const URL = "https://lzarcheryhomepage.herokuapp.com/";
 
 const period = [
   {

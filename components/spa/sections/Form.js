@@ -13,7 +13,7 @@ import Container from "@material-ui/core/Container";
 import axios from "axios";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
-const URL = "https://lzarhcery-landing.herokuapp.com/";
+const URL = "https://lzarcheryhomepage.herokuapp.com/";
 
 const period = [
   {
