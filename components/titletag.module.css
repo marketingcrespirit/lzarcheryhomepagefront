@@ -59,6 +59,14 @@
   background-image: url("/assets/images/banners/pic_9.jpg");
 }
 
+.bg10 {
+  background-image: url("/assets/images/banners/pic_10.jpg");
+}
+
+.bg11 {
+  background-image: url("/assets/images/banners/pic_11.jpg");
+}
+
 
 .heigher {
   height: 595px;

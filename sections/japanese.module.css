@@ -1,0 +1,182 @@
+.openingWrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 7em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+
+}
+
+.openingWrapper h1 {
+  margin: 1em 0;
+}
+
+.openingWrapper p {
+  margin: 2em auto;
+  max-width: 700px;
+  line-height: 2em;
+}
+
+.bodyWrapper,
+.bottomWrapper,
+.linkWrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4em 0;
+}
+
+.bodyWrapper,
+.linkWrapper {
+  text-align: center;
+}
+
+.bottomWrapper {
+  max-width: 900px;
+  line-height: 2em;
+}
+
+.linkWrapper h2 {
+    margin-bottom: 1em;
+}
+
+.bodyTitle {
+  padding-bottom: 5em;
+  border-bottom: 1px solid #000;
+}
+
+.bodyTitleTxt {
+  margin: 5em 0;
+}
+
+.subtitle p {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 0.3em 0;
+  width: fit-content;
+  margin: 5em auto 1.5em auto;
+}
+
+.teacherWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 3em auto;
+}
+
+.teacherImgWrapper {
+  width: 100%;
+  margin-right: 3em;
+}
+
+.teacherHeadWrapper {
+}
+
+.teacherHeadWrapper > h2:nth-child(2) {
+  margin-top: 1.2em;
+  font-size: 1.1em;
+}
+
+.teacherTxtWrapper {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+.teacherContentWrapper {
+  text-align: left;
+  line-height: 2em;
+}
+
+.teacherContentWrapper p {
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+.classContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.classContentLeft {
+  text-align: right;
+  padding-right: 3em;
+  border-right: 1px solid #000;
+  width: 30%;
+}
+
+.classContentRight {
+  text-align: left;
+  padding-left: 3em;
+  margin-top: 5em;
+  width: 30%;
+}
+
+.tables {
+    padding-bottom: 5em;
+    border-bottom: 1px solid #000;
+}
+
+.tg {
+  background-color: #fff;
+  margin: 5em auto 0 auto;
+  width: 60%;
+  white-space: pre-wrap;
+}
+.tg td {
+  border: 1px solid #000;
+
+  padding: 10px 5px;
+}
+.tg th {
+  border: 1px solid #000;
+  padding: 10px 5px;
+}
+.tg .tgBaqh {
+  text-align: center;
+  padding: 1rem;
+}
+.tg .tgC3ow {
+  text-align: center;
+  padding: 1rem;
+}
+
+.left {
+  width: 20%;
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .tg {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

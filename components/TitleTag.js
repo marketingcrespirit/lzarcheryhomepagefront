@@ -32,12 +32,18 @@ const TitleTag = (props) => {
     case 9:
       style = "bg9";
       break;
+    case 10:
+      style = "bg10";
+      break;
+    case 11:
+      style = "bg11";
+      break;
     default:
       style = "";
       break;
   }
   return (
-    <div className={props.home? `${styles.titleTag} ${style} ${styles.heigher}`: `${styles.titleTag} ${style}` }>
+    <div className={props.home ? `${styles.titleTag} ${style} ${styles.heigher}` : `${styles.titleTag} ${style}`}>
       <div className={styles.titleTagContent}>
         <img className="desktop" src="/assets/icons/arrow.png" />
         <h2 className="desktop">{props.title}</h2>

@@ -1,6 +1,7 @@
 import React from "react";
 import TitleTag from "../components/TitleTag";
 import styles from "./experience.module.css";
+import Form from '../components/Form'
 
 export default function Experience() {
   const blockOne = ["開弓時，用力的同時要放鬆。", "推弓時，舉起弓但不握弓。", "每次拉弓手要靠在同樣的位置。", "太執著於「瞄準中心」。"];
@@ -98,6 +99,8 @@ export default function Experience() {
           <li>立禪射藝保留全部有關於價格及計費方式的修改、說明、解釋的所有權利。</li>
         </ul>
       </div>
+
+      <Form />
     </div>
   );
 }

@@ -9,8 +9,18 @@ const routes = [
     breadcrumbName: "關於立禪"
   },
   {
-    path: "/experience",
-    breadcrumbName: "體驗射箭"
+    path: "/experiences",
+    breadcrumbName: "體驗射箭",
+    routes: [
+      {
+        path: "/experiences/experience",
+        breadcrumbName: "體驗射箭"
+      },
+      {
+        path: "/experiences/kyudo",
+        breadcrumbName: "和弓體驗"
+      }
+    ]
   },
   {
     path: "/courses",

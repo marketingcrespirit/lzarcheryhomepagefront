@@ -31,6 +31,33 @@ const period = [
   },
 ];
 
+
+const questions = [{
+  value: "現代弓-新手體驗課程",
+  label: "現代弓-新手體驗課程",
+},{
+  value: "日本和弓-新手體驗課程",
+  label: "日本和弓-新手體驗課程",
+},{
+  value: "競技反曲弓-兒童專班",
+  label: "競技反曲弓-兒童專班",
+},{
+  value: "場地租借與使用規範",
+  label: "場地租借與使用規範",
+},{
+  value: "入籍會員與相關優惠",
+  label: "入籍會員與相關優惠",
+},{
+  value: "企業包場與特約洽談",
+  label: "企業包場與特約洽談",
+},{
+  value: "場內公告說明",
+  label: "場內公告說明",
+},{
+  value: "其他",
+  label: "其他",
+}];
+
 const time = [
   {
     value: "09:00-12:00",
@@ -52,6 +79,7 @@ const time = [
 
 class SignUp extends Component {
   state = {
+    question: this.props.question,
     name: this.props.name,
     phone: this.props.phone,
     period: this.props.period,
@@ -88,13 +116,22 @@ class SignUp extends Component {
       <div className={styles.formWrapper}>
         <Container className={styles.center} component="main" maxWidth="xs">
           <div>
-            <Avatar className={styles.icon}>{/* <LockOutlinedIcon /> */}</Avatar>
+            <Avatar className={styles.icon}></Avatar>
             <Typography component="h1" variant="h5">
               服務表單
             </Typography>
             <p className="form-remind">*為必填項目</p>
             <form onSubmit={this.submitHandler}>
               <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <TextField select onChange={this.inputChangeHandler} variant="outlined" required fullWidth id="question" label="需求內容" name="question">
+                    {questions.map((option) => (
+                      <MenuItem key={option.value} value={option.value}>
+                        {option.label}
+                      </MenuItem>
+                    ))}
+                  </TextField>
+                </Grid>
                 <Grid item xs={6}>
                   <TextField onChange={this.inputChangeHandler} name="name" variant="outlined" required fullWidth id="name" label="姓名" />
                 </Grid>
