@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 
 import MenuItem from "@material-ui/core/MenuItem";
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import axios from "axios";
@@ -31,32 +32,40 @@ const period = [
   },
 ];
 
-
-const questions = [{
-  value: "現代弓-新手體驗課程",
-  label: "現代弓-新手體驗課程",
-},{
-  value: "日本和弓-新手體驗課程",
-  label: "日本和弓-新手體驗課程",
-},{
-  value: "競技反曲弓-兒童專班",
-  label: "競技反曲弓-兒童專班",
-},{
-  value: "場地租借與使用規範",
-  label: "場地租借與使用規範",
-},{
-  value: "入籍會員與相關優惠",
-  label: "入籍會員與相關優惠",
-},{
-  value: "企業包場與特約洽談",
-  label: "企業包場與特約洽談",
-},{
-  value: "場內公告說明",
-  label: "場內公告說明",
-},{
-  value: "其他",
-  label: "其他",
-}];
+const questions = [
+  {
+    value: "現代弓-新手體驗課程",
+    label: "現代弓-新手體驗課程",
+  },
+  {
+    value: "日本和弓-新手體驗課程",
+    label: "日本和弓-新手體驗課程",
+  },
+  {
+    value: "競技反曲弓-兒童專班",
+    label: "競技反曲弓-兒童專班",
+  },
+  {
+    value: "場地租借與使用規範",
+    label: "場地租借與使用規範",
+  },
+  {
+    value: "入籍會員與相關優惠",
+    label: "入籍會員與相關優惠",
+  },
+  {
+    value: "企業包場與特約洽談",
+    label: "企業包場與特約洽談",
+  },
+  {
+    value: "場內公告說明",
+    label: "場內公告說明",
+  },
+  {
+    value: "其他",
+    label: "其他",
+  },
+];
 
 const time = [
   {
@@ -85,8 +94,10 @@ class SignUp extends Component {
     period: this.props.period,
     hour: this.props.hour,
     email: this.props.email,
+    other: this.props.other,
     submitted: false,
   };
+  
 
   submitHandler = (event) => {
     event.preventDefault();
@@ -116,22 +127,13 @@ class SignUp extends Component {
       <div className={styles.formWrapper}>
         <Container className={styles.center} component="main" maxWidth="xs">
           <div>
-            <Avatar className={styles.icon}></Avatar>
+    <Avatar className={styles.icon}>{}</Avatar>
             <Typography component="h1" variant="h5">
               服務表單
             </Typography>
             <p className="form-remind">*為必填項目</p>
             <form onSubmit={this.submitHandler}>
               <Grid container spacing={2}>
-                <Grid item xs={12}>
-                  <TextField select onChange={this.inputChangeHandler} variant="outlined" required fullWidth id="question" label="需求內容" name="question">
-                    {questions.map((option) => (
-                      <MenuItem key={option.value} value={option.value}>
-                        {option.label}
-                      </MenuItem>
-                    ))}
-                  </TextField>
-                </Grid>
                 <Grid item xs={6}>
                   <TextField onChange={this.inputChangeHandler} name="name" variant="outlined" required fullWidth id="name" label="姓名" />
                 </Grid>
@@ -162,6 +164,20 @@ class SignUp extends Component {
 
                 <Grid item xs={12}>
                   <TextField type="email" onChange={this.inputChangeHandler} variant="outlined" fullWidth id="email" label="Email" name="email" />
+                </Grid>
+
+                <Grid item xs={12}>
+                  <TextField select onChange={this.inputChangeHandler} variant="outlined" required fullWidth id="question" label="需求內容" name="question">
+                    {questions.map((option) => (
+                      <MenuItem key={option.value} value={option.value}>
+                        {option.label}
+                      </MenuItem>
+                    ))}
+                  </TextField>
+                </Grid>
+
+                <Grid className={this.state.question === "其他" ? "" : `${styles.gridItem}`} item xs={12}>
+                  <TextField type="string" onChange={this.inputChangeHandler} variant="outlined" fullWidth id="other" label="其他內容" name="other"></TextField>
                 </Grid>
 
                 <Grid item xs={12}></Grid>

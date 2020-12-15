@@ -14,11 +14,11 @@ const routes = [
     routes: [
       {
         path: "/experiences/experience",
-        breadcrumbName: "體驗射箭"
+        breadcrumbName: "現代弓體驗課"
       },
       {
         path: "/experiences/kyudo",
-        breadcrumbName: "和弓體驗"
+        breadcrumbName: "日本和弓體驗課"
       }
     ]
   },

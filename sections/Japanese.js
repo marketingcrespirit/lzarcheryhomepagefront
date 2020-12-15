@@ -26,8 +26,7 @@ export default function Experience() {
               <div className={styles.subtitle}>
                 <p>初探弓道</p>
               </div>
-              <p>在這一堂體驗課裡，將由講師一步步引領你進入日本弓道藝術的世界</p>
-              <p>從基礎的知識背景建構開始，到學習一個「弓道人」進入道場後，會進行的各種禮節與儀式。 　 </p>
+              <p>在這一堂體驗課裡，將由講師一步步引領你進入日本弓道藝術的世界從基礎的知識背景建構開始，到學習一個「弓道人」進入道場後，會進行的各種禮節與儀式。</p>
             </div>
           </div>
         </div>
@@ -76,7 +75,7 @@ export default function Experience() {
               </tr>
               <tr>
                 <td className={`${styles.tgC3ow} ${styles.left}`}>場次</td>
-                <td className={styles.tgBaqh}>{`早場9:30-12:00 \n  午場14:30-17:00  \n 晚場18:30-21:00`}</td>
+                <td className={styles.tgBaqh}>{`早場09:30-12:00 \n  午場14:30-17:00  \n 晚場18:30-21:00`}</td>
               </tr>
               <tr>
                 <td className={`${styles.tgC3ow} ${styles.left}`}>地點</td>
@@ -137,15 +136,12 @@ export default function Experience() {
             立禪射藝FB
           </a>
           私訊詢問
-        </h2>
-        <h2>
-          或撥打場內電話
+          <br/>或撥打場內電話
           <a className={styles.mobile} href="tel:+886-3-657-7681" target="_blank">
             03-6577681
           </a>
           <span className={styles.desktop}>03-6577681</span>
-        </h2>
-        <h2>將有專人為您服務。</h2>
+        <br/>將有專人為您服務。</h2>
       </div>
       <Form />
     </div>

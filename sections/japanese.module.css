@@ -6,9 +6,8 @@
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .openingWrapper h1 {
@@ -40,7 +39,11 @@
 }
 
 .linkWrapper h2 {
-    margin-bottom: 1em;
+  line-height: 2em;
+}
+
+.linkWrapper a {
+  font-size: 1em;
 }
 
 .bodyTitle {
@@ -50,6 +53,12 @@
 
 .bodyTitleTxt {
   margin: 5em 0;
+}
+
+.bodyTitle > div:nth-child(2) > div > p:nth-child(2) {
+  width: 65%;
+  margin: auto;
+  line-height: 2em;
 }
 
 .subtitle p {
@@ -123,8 +132,8 @@
 }
 
 .tables {
-    padding-bottom: 5em;
-    border-bottom: 1px solid #000;
+  padding-bottom: 5em;
+  border-bottom: 1px solid #000;
 }
 
 .tg {
@@ -161,9 +170,8 @@
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
-
 
 @media only screen and (max-width: 1100px) {
   .tg {
@@ -171,12 +179,110 @@
   }
 }
 
-
 @media only screen and (max-width: 700px) {
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
+  .openingWrapper {
+    width: 85%;
+    text-align: left;
+    margin-bottom: 3em;
+  }
+  .openingWrapper p {
+    margin: 0.7em auto;
+  }
+
+  .bodyTitle > div:nth-child(2) > div > p:nth-child(2) {
+    text-align: left;
+    width: 100%;
+  }
+
+  .bodyWrapper {
+    padding-top: 0;
+    padding-bottom: 3em;
+  }
+
+  .bodyTitle,
+  .bottomWrapper {
+    width: 85%;
+    margin: auto;
+  }
+  .classContent {
+    display: block;
+    padding-bottom: 5em;
+  }
+  .classContentLeft,
+  .classContentRight {
+    width: 85%;
+    text-align: left;
+    margin: auto;
+    padding: 0;
+    border: none;
+  }
+  .left {
+    width: 25%;
+  }
+
+  .teacherWrapper {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .teacherHeadWrapper {
+    text-align: center;
+    margin: 1.5em auto;
+  }
+  .teacherContentWrapper p {
+    margin: 0;
+  }
+
+  .subtitle p {
+    margin: 2em auto 4em auto;
+  }
+  .teacherTxtWrapper {
+    height: auto;
+  }
+  .bottomWrapper {
+    padding-bottom: 4em;
+  }
+  .bottomWrapper ol {
+    padding-left: 1.5em;
+  }
+  .linkWrapper {
+    padding-top: 2em;
+    position: relative;
+  }
+
+  .linkWrapper:before {
+    content: "";
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    border-top: 1px solid #000;
+    
+  }
+
+  .tables::before {
+    content: "";
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .tables {
+    position: relative;
+    padding: 3em 0 6em 0;
+    border: none;
+  }
+  .tg {
+    margin: 0 auto;
+  }
 }
