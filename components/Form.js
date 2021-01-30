@@ -143,16 +143,6 @@ class SignUp extends Component {
                 </Grid>
 
                 <Grid item xs={12}>
-                  <TextField select onChange={this.inputChangeHandler} variant="outlined" required fullWidth id="period" label="平日/假日" name="period">
-                    {period.map((option) => (
-                      <MenuItem key={option.value} value={option.value}>
-                        {option.label}
-                      </MenuItem>
-                    ))}
-                  </TextField>
-                </Grid>
-
-                <Grid item xs={12}>
                   <TextField select onChange={this.inputChangeHandler} variant="outlined" required fullWidth id="hour" label="方便聯絡時間" name="hour">
                     {time.map((option) => (
                       <MenuItem key={option.value} value={option.value}>

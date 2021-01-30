@@ -22,7 +22,7 @@ export default function Indexcard(allPostsData) {
   return (
     <div>
       <div className={styles.videoWrapper}>
-        <video src="/assets/videos/banner.mp4" autoPlay muted loop />
+        <video src="/assets/videos/banner.mp4" preload="auto" autoPlay muted loop />
       </div>
 
       <div className={styles.videoWrapperMobile}>
