@@ -22,10 +22,10 @@ const routes = [
       }
     ]
   },
-  {
-    path: "/courses",
-    breadcrumbName: "兒童課程"
-  },
+  //{
+  //  path: "/courses",
+    //breadcrumbName: "兒童課程"
+  //},
   {
     path: "/members",
     breadcrumbName: "會員制度",
