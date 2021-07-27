@@ -15,7 +15,7 @@ const Traffic = () => {
             <dt>聯絡電話</dt>
             <dd>03-6577681</dd>
             <dt>電子信箱</dt>
-            <dd>lzarchery@crespirit.com</dd>
+            <dd>service@lzarchery.com</dd>
           </div>
           <div className={styles.trafficWrapperTxt}>
             <p>由於豐邑京站出入口多，以下提供路線指引參考。</p>
