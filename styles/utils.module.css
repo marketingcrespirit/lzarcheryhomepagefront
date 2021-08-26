@@ -301,11 +301,6 @@
   margin: auto;
 }
 
-.managerCardImg {
-  background-image: url("../public/assets/images/employees/coo.jpg");
-  height: 289px;
-}
-
 .managerCardWrapper {
   padding: 5em;
   width: 80%;
