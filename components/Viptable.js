@@ -47,13 +47,8 @@ const Viptable = () => {
             <td className={styles.tg0pky}>
               <p>場地使用</p>
             </td>
-            <td className={styles.tg0pky} colSpan="2">
+            <td className={styles.tg0pky} colSpan="3">
               <p>09:00 - 22:00 <br/>不限時間 免費使用</p>
-            </td>
-          </tr>
-          <tr>
-            <td className={styles.tg0lax} colSpan="2">
-              <p>團體課程</p>
             </td>
           </tr>
           <tr>
@@ -64,12 +59,12 @@ const Viptable = () => {
                 好禮二選一
               </p>
             </td>
-            <td className={styles.tg0lax} colSpan="2">
+            <td className={styles.tg0lax} colSpan="3">
               <p>弓箭租借免費</p>
             </td>
           </tr>
           <tr>
-            <td className={styles.tg0lax} colSpan="2">
+            <td className={styles.tg0lax} colSpan="3">
               <p>個人弓櫃</p>
             </td>
           </tr>
@@ -88,7 +83,7 @@ const Viptable = () => {
             </td>
           </tr>
           <tr>
-            <td className={`${styles.tg0lax} ${styles.gray}`} colSpan="3">
+            <td className={`${styles.tg0lax} ${styles.gray}`} colSpan="4">
               <h2>加購優惠</h2>
             </td>
           </tr>
@@ -96,7 +91,7 @@ const Viptable = () => {
             <td className={`${styles.tg0lax} ${styles.gray}`}>
               <p>個人教練課(1小時) 原價$2200</p>
             </td>
-            <td className={`${styles.tg0lax} ${styles.gray}`} colSpan="2">
+            <td className={`${styles.tg0lax} ${styles.gray}`} colSpan="3">
               <p>VIP首購$500</p>
             </td>
           </tr>
