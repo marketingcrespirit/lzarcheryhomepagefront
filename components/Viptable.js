@@ -7,26 +7,13 @@ const Viptable = () => {
       <table className={styles.tg}>
         <thead>
           <tr>
-            <th className={styles.tg0pky} colSpan="3">
+            <th className={styles.tg0pky} colSpan="4">
               <h2>VIP超級會員方案</h2>
             </th>
           </tr>
         </thead>
         <tbody>
           
-          <tr>
-            <td className={styles.tg0pky}>
-              <p>方案價格</p>
-            </td>
-            <td className={styles.tg0pky}>
-              <p>$3,880</p>
-            
-            </td>
-            <td className={styles.tg0pky}>
-              <p>$8,800</p>
-     
-            </td>
-          </tr>
           <tr>
             <td className={styles.tg0pky}>
               <p>方案時間</p>
@@ -37,25 +24,31 @@ const Viptable = () => {
             <td className={styles.tg0pky}>
               <p>90天</p>
             </td>
+            <td className={styles.tg0pky}>
+              <p>1年</p>
+            </td>
           </tr>
+
+          <tr>
+            <td className={styles.tg0pky}>
+              <p>方案價格</p>
+            </td>
+            <td className={styles.tg0pky}>
+              <p>$3,880</p>           
+            </td>
+            <td className={styles.tg0pky}>
+              <p>$8,800</p>
+              </td>
+            <td className={styles.tg0pky}>
+              <p>$35,200</p>
+            </td>
+          </tr>        
           <tr>
             <td className={styles.tg0pky}>
               <p>場地使用</p>
             </td>
             <td className={styles.tg0pky} colSpan="2">
-              <p>09:00 - 23:00 <br/>不限時間 免費使用</p>
-            </td>
-          </tr>
-          <tr>
-            <td className={styles.tg0lax} rowSpan="2">
-              <p>
-                會員專屬
-                <br />
-                免費活動
-              </p>
-            </td>
-            <td className={styles.tg0lax} colSpan="2">
-              <p>會員之夜</p>
+              <p>09:00 - 22:00 <br/>不限時間 免費使用</p>
             </td>
           </tr>
           <tr>
@@ -78,6 +71,20 @@ const Viptable = () => {
           <tr>
             <td className={styles.tg0lax} colSpan="2">
               <p>個人弓櫃</p>
+            </td>
+          </tr>
+          <tr>
+            <td className={styles.tg0pky}>
+              <p>獨享優惠</p>
+            </td>
+            <td className={styles.tg0pky}>
+              <p></p>
+            </td>
+            <td className={styles.tg0pky}>
+              <p></p>
+            </td>
+            <td className={styles.tg0pky}>
+              <p>贈送2個月</p>
             </td>
           </tr>
           <tr>
