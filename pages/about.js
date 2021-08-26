@@ -16,7 +16,6 @@ const coaches = [
 
 const boss = [
   { name: "倆儀", main: "創辦人", src: "/assets/images/employees/ceo.jpg", href: "manager/ceo" },
-  { name: "大師", main: "營運長", src: "/assets/images/employees/coo.jpg", href: "manager/coo" },
 ];
 
 export default function History() {
